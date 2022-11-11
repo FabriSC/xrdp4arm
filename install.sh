@@ -134,6 +134,7 @@ sudo iptables -F
 sudo netfilter-persistent save
 rm -rf /etc/xrdp/xrdp.ini
 wget https://raw.githubusercontent.com/FabriSC/xrdp4arm/main/xrdp.ini /etc/xrdp/xrdp.ini
+systemctl restart xrdp
 echo "Install Done!"
 echo "Now you can reboot and connect port 3389 with rdp client"
 echo "Note: chromium-browser is not displayed on the desktop, please start it manually if necessary"
