@@ -130,6 +130,8 @@ xrdp_conf
 desktop_env_conf
 
 apt-get autoremove -y
+sudo iptables -F
+sudo netfilter-persistent save
 
 echo "Install Done!"
 echo "Now you can reboot and connect port 3389 with rdp client"
